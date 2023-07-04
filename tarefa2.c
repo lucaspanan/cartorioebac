@@ -114,6 +114,7 @@ int laco=1;
     printf("\t1-registrar aluno:\n\n");
     printf("\t2-consultar aluno: \n\n");
     printf("\t3-deletar aluno:\n\n");
+    printf("\t4- sair do sistema\n\n");
     printf("opção:");// fim do menu 
 
     scanf("%d",&opcao);// %d é respondavel por guardar um numero inteiro, e guardando as informaçes do usuario.
@@ -133,6 +134,11 @@ int laco=1;
       case 3:
  	   deletar();
         break;
+        
+        case 4:
+        	printf("obrigado por ultilizar o sistema");
+        	return 0;
+        	break;
       
      default:
  	   printf("essa opção não está disponvel, desculpe!!\n");
